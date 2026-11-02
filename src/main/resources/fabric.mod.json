@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "playeralarms",
+  "version": "${version}",
+  "name": "PlayerAlarms",
+  "description": "PlayerAlarms addon for AUTISM Client. Inspired by Trouser Streak PlayerAlarms.",
+  "authors": [
+    "RGBOSSGamerz"
+  ],
+  "custom": {
+    "autism:color": "80,220,120",
+    "modmenu": {
+      "parent": {
+        "id": "autism"
+      }
+    }
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.playeralarms.addon.PlayerAlarmsInit"
+    ],
+    "autism": [
+      "com.playeralarms.addon.PlayerAlarmsAddon"
+    ]
+  },
+  "depends": {
+    "java": ">=25",
+    "minecraft": "${mc_compat}",
+    "fabricloader": ">=0.19.3",
+    "fabric-api": ">=${fabric_api_version}",
+    "autism": ">=${autism_api_version}"
+  }
+}
